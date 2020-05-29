@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<iostream>
+#include<cstdlib>
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+ string s;
+ cin>>s;
+ vector<char>v;
+ for(int i=0;i<s.size();i++){
+     if(!(s[i]=='+')){
+         v.push_back(s[i]);
+     }
+ }
+ sort(v.begin(),v.end());
+ string g;
+ g=g+v[0];
+ for(int j=1;j<v.size();j++){
+     g=g+"+"+v[j];
+ }
+ cout<<g;
+}
