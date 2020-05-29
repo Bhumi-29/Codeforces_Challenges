@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<iostream>
+#include<string>
+#include<vector>
+#include<algorithm>
+#include<cstdlib>
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+	long long int n;int count=0;
+	cin>>n;
+
+	while(n>0){
+		int l=n%10;
+		if(l==7||l==4){
+			count=count+1;
+		}
+		n=n/10;
+	}
+	if(count==4||count==7){
+		cout<<"YES";
+	}else{
+		cout<<"NO";
+	}
+	
+	
+}
